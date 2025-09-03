@@ -8,6 +8,7 @@ The clean, responsive, and user-friendly interface ensures a distraction-free le
 This project effectively showcases key principles of DOM manipulation and event handling, making it an ideal, lightweight solution for anyone looking to make their study sessions more efficient and interactive.
 
 
+
 **Tech Stack**
 
 This project was built using fundamental front-end technologies:
@@ -16,9 +17,15 @@ CSS3: For styling the user interface, animations, and responsive layout.
 JavaScript (ES6): For all the application logic, including creating, deleting, and flipping flashcards, and handling user events.
 
 
+
 **How to Use**
 
 View Cards: The main screen displays all your current flashcards.
 Flip a Card: Click on any flashcard to flip it over and see the answer. Click again to see the question.
 Add a New Card: Click the "Add New Card" button to show the input form. Enter your question and answer in the respective fields. Click "Add Card" to add it to your deck.
 Delete a Card: Click the red 'X' or trash icon on any flashcard to permanently remove it from your deck.
+
+<img width="1208" height="1844" alt="Exam buddy" src="https://github.com/user-attachments/assets/6cf7b75e-b37f-4eb2-80ab-4ee157eddc13" />
+<img width="1204" height="638" alt="Exam buddy 2" src="https://github.com/user-attachments/assets/9c90fb65-373e-48ad-ac0b-608f4b2495aa" />
+
+
