@@ -26,6 +26,5 @@ Add a New Card: Click the "Add New Card" button to show the input form. Enter yo
 Delete a Card: Click the red 'X' or trash icon on any flashcard to permanently remove it from your deck.
 
 <img width="1208" height="1844" alt="Exam buddy" src="https://github.com/user-attachments/assets/6cf7b75e-b37f-4eb2-80ab-4ee157eddc13" />
-<img width="1204" height="638" alt="Exam buddy 2" src="https://github.com/user-attachments/assets/9c90fb65-373e-48ad-ac0b-608f4b2495aa" />
 
 
