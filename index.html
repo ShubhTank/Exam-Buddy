@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎯</text></svg>"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>EXAM BUDDY | Learn Better</title>
+  </head>
+  <body>
+    <section class="container">
+      <header>
+        <div class="logo">
+          <i class="fas fa-layer-group"></i>
+          <span>EXAM BUDDY</span>
+        </div>
+        <button id="studyAllBtn" class="btn btn-primary">
+          <i class="fas fa-graduation-cap"></i> Study All
+        </button>
+      </header>
+
+      <div class="main-content">
+        <div class="flashcard-form">
+            <h2>Create New Flashcard</h2>
+            <div class="form-group">
+                <label for="flashcardTitle">Title</label>
+                <input type="text" id="flashcardTitle" class="form-control" placeholder="Enter title...">
+            </div>
+            <div class="form-group">
+                <label for="flashcardFront">Front Content</label>
+                <textarea id="flashcardFront" class="form-control" placeholder="Enter front content..."></textarea>
+            </div>
+            <div class="form-group">
+                <label for="flashcardBack">Back Content</label>
+                <textarea id="flashcardBack" class="form-control" placeholder="Enter back content..."></textarea>
+            </div>
+
+            <div class="form-group folder-management">
+                <h3>Organize</h3>
+                <label for="folderSelect">Add to Folder</label>
+                <select id="folderSelect" class="form-control"></select>
+
+                <label for="newFolderName">Or Create New Folder</label>
+                <div class="new-folder-input">
+                    <input type="text" id="newFolderName" class="form-control" placeholder="New folder name...">
+                    <button id="addFolderBtn" class="btn btn-primary"><i class="fas fa-plus"></i></button>
+                </div>
+            </div>
+
+            <div class="form-actions">
+                <button id="saveFlashcardBtn" class="btn btn-primary">
+                    <i class="fas fa-save"></i> Save
+                </button>
+                <button id="clearFormBtn" class="btn btn-outline">
+                    <i class="fas fa-eraser"></i> Clear
+                </button>
+            </div>
+        </div>
+
+        <div class="right-panel">
+            <h2>My Folders</h2>
+            <div class="folders-container" id="foldersContainer">
+                 </div>
+            <div class="flashcards-section">
+                <div class="actions-bar">
+                    <h3 id="currentFolderName">All Flashcards</h3>
+                    <div class="stats" id="statsDisplay">0 flashcards</div>
+                </div>
+
+                <div class="flashcards-container" id="flashcardsContainer">
+                    <div class="empty-state">
+                        <i class="fas fa-layer-group"></i>
+                        <h3>No Flashcards Yet</h3>
+                        <p>Create your first flashcard to get started!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+       <div class="study-mode" id="studyMode">
+      <div class="study-card" id="studyCard">
+          <button class="close-study" id="closeStudy">
+              <i class="fas fa-times"></i>
+          </button>
+          <div class="study-card-front">
+              <h2 id="studyFrontTitle">Front Title</h2>
+              <p id="studyFrontContent">Front content goes here...</p>
+              <button class="btn btn-primary" id="flipStudyCardBtn">
+                  <i class="fas fa-redo"></i> Flip Card
+              </button>
+          </div>
+          <div class="study-card-back">
+              <h2>Answer</h2>
+              <p id="studyBackContent">Back content goes here...</p>
+          </div>
+      </div>
+    </div>
+
+      <div class="study-mode" id="quizMode">
+          <div class="quiz-card" id="quizCard">
+              <button class="close-study" id="closeQuiz">
+                  <i class="fas fa-times"></i>
+              </button>
+              <div id="quizContent">
+                  <div class="quiz-progress" id="quizProgress">Question 1 / 10</div>
+                  <div class="quiz-question-area">
+                      <h2 id="quizQuestionTitle">Question Title</h2>
+                      <p id="quizQuestionContent">Question content goes here...</p>
+                  </div>
+                  <div class="quiz-answer-area">
+                      <label for="quizAnswerInput">Your Answer</label>
+                      <input type="text" id="quizAnswerInput" class="form-control" placeholder="Type your answer...">
+                      <button id="submitQuizAnswerBtn" class="btn btn-primary">Submit</button>
+                  </div>
+                  <div class="quiz-feedback-area" id="quizFeedbackArea" style="display: none;">
+                      <h3 id="feedbackTitle"></h3>
+                      <p><strong>Correct Answer:</strong> <span id="correctAnswer"></span></p>
+                      <button id="nextQuestionBtn" class="btn btn-primary">Next Question</button>
+                  </div>
+              </div>
+              <div id="quizResults" style="display: none;" class="quiz-results">
+                  <h2>Quiz Complete!</h2>
+                  <p>Your Score: <span id="finalScore"></span></p>
+                  <button id="restartQuizBtn" class="btn btn-primary">Try Again</button>
+              </div>
+          </div>
+      </div>
+
+    <div class="toast" id="toast"></div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
