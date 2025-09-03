@@ -7,12 +7,14 @@ Users have full control over their study deck, with the ability to dynamically a
 The clean, responsive, and user-friendly interface ensures a distraction-free learning experience on any device. 
 This project effectively showcases key principles of DOM manipulation and event handling, making it an ideal, lightweight solution for anyone looking to make their study sessions more efficient and interactive.
 
+
 **Tech Stack**
 
 This project was built using fundamental front-end technologies:
 HTML5: For the structure and content of the application.
 CSS3: For styling the user interface, animations, and responsive layout.
 JavaScript (ES6): For all the application logic, including creating, deleting, and flipping flashcards, and handling user events.
+
 
 **How to Use**
 
