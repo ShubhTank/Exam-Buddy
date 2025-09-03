@@ -25,6 +25,6 @@ Flip a Card: Click on any flashcard to flip it over and see the answer. Click ag
 Add a New Card: Click the "Add New Card" button to show the input form. Enter your question and answer in the respective fields. Click "Add Card" to add it to your deck.
 Delete a Card: Click the red 'X' or trash icon on any flashcard to permanently remove it from your deck.
 
-<img width="1208" height="1844" alt="Exam buddy" src="https://github.com/user-attachments/assets/6cf7b75e-b37f-4eb2-80ab-4ee157eddc13" />
+<img width="1208" height="1786" alt="exam buddy" src="https://github.com/user-attachments/assets/6ea2bc30-0639-4b3a-a652-d24c697a79fc" />
 
 
