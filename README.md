@@ -4,13 +4,11 @@
 Exam Buddy is a dynamic and intuitive web-based flashcard application designed to be the perfect companion for students and learners preparing for exams. Built purely with vanilla HTML, CSS, and JavaScript, this project serves as both a practical study tool and a clear demonstration of core front-end development skills. The clean, responsive, and user-friendly interface ensures a distraction-free learning experience on any device, making study sessions more efficient and interactive.
 
 
-*(Replace the link above with your actual deployment link from GitHub Pages or another hosting service.)*
 
 ## 📸 Preview
 
 <img width="1208" height="1786" alt="exam buddy" src="https://github.com/user-attachments/assets/6ea2bc30-0639-4b3a-a652-d24c697a79fc" />
 
-*(It is highly recommended to replace the placeholder link above with a GIF or screenshot of your project. You can add an image/gif to your repository and link to it like this: `./assets/demo.gif`)*
 
 ---
 
