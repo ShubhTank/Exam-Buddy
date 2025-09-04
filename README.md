@@ -40,18 +40,7 @@ To get a local copy up and running, follow these simple steps.
 
 You only need a modern web browser like Google Chrome, Firefox, or Safari.
 
-### Installation
 
-1.  **Clone the repository:**
-    ```bash
-    git clone [https://github.com/your-username/exam-buddy.git](https://github.com/your-username/exam-buddy.git)
-    ```
-2.  **Navigate to the project directory:**
-    ```bash
-    cd exam-buddy
-    ```
-3.  **Open the application:**
-    Simply open the `index.html` file in your web browser.
 
 ### How to Use
 
